@@ -39,7 +39,7 @@ const Contact = () => {
   };
 
   return (
-    <section className="w-full px-6 md:px-12 mt-8 lg:px-20 py-16 flex flex-col lg:flex-row items-center justify-between bg-white">
+    <section className="w-full px-6 md:px-12 mt-10 lg:px-20 py-16 flex flex-col lg:flex-row items-center justify-between bg-white">
       
       {/* Left Section */}
       <div className="w-full lg:w-1/2 space-y-6">

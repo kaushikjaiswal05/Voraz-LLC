@@ -1,10 +1,11 @@
 import { useState, useEffect, useRef } from "react";
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import { FiMenu, FiX } from "react-icons/fi";
 
 const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
   const menuRef = useRef(null);
+
   useEffect(() => {
     const closeMenuOnOutsideClick = (e) => {
       if (menuOpen && menuRef.current && !menuRef.current.contains(e.target)) {
@@ -20,16 +21,24 @@ const Navbar = () => {
       <div className="container mx-auto flex justify-between items-center p-4 md:p-5">
         
         {/* Logo */}
-        <Link to="/" className="flex items-center space-x-2">
+        <NavLink to="/" className="flex items-center space-x-2">
           <img src="/images/logo-voraz.jpg" alt="logo" className="w-30 h-12 md:w-30 md:h-12" />
-        </Link>
+        </NavLink>
 
         {/* Desktop Navigation */}
         <ul className="hidden md:flex space-x-8 text-lg">
-          <li><Link className="hover:text-[#8C4B23] transition" to="/">Home</Link></li>
-          <li><Link className="hover:text-[#8C4B23] transition" to="/services">Services</Link></li>
-          <li><Link className="hover:text-[#8C4B23] transition" to="/about">About</Link></li>
-          <li><Link className="hover:text-[#8C4B23] transition" to="/contact">Contact</Link></li>
+          {["Home", "Services", "About", "Contact"].map((page) => (
+            <li key={page}>
+              <NavLink
+                to={page === "Home" ? "/" : `/${page.toLowerCase()}`}
+                className={({ isActive }) =>
+                  `transition ${isActive ? "text-[#8C4B23] font-semibold" : "hover:text-[#8C4B23]"}`
+                }
+              >
+                {page}
+              </NavLink>
+            </li>
+          ))}
         </ul>
 
         {/* Mobile Menu Button */}
@@ -49,9 +58,9 @@ const Navbar = () => {
         }`}
       >
         <div className="flex justify-between items-center">
-          <Link to="/" className="flex items-center space-x-2">
+          <NavLink to="/" className="flex items-center space-x-2">
             <img src="/images/logo-voraz.jpg" alt="logo" className="w-30 h-12 md:w-30 md:h-12" />
-          </Link>
+          </NavLink>
           <button 
             className="text-[#8C4B23]" 
             onClick={() => setMenuOpen(false)}
@@ -60,12 +69,20 @@ const Navbar = () => {
           </button>
         </div>
 
-        {/* Navigation Links */}
+        {/* Mobile Navigation Links */}
         <div className="flex flex-col items-start space-y-6 mt-8">
-          <Link className="text-lg text-[#1A0D36] font-medium" to="/" onClick={() => setMenuOpen(false)}>Home</Link>
-          <Link className="text-lg text-[#1A0D36] font-medium" to="/services" onClick={() => setMenuOpen(false)}>Services</Link>
-          <Link className="text-lg text-[#1A0D36] font-medium" to="/about" onClick={() => setMenuOpen(false)}>About</Link>
-          <Link className="text-lg text-[#1A0D36] font-medium" to="/contact" onClick={() => setMenuOpen(false)}>Contact</Link>
+          {["Home", "Services", "About", "Contact"].map((page) => (
+            <NavLink
+              key={page}
+              to={page === "Home" ? "/" : `/${page.toLowerCase()}`}
+              className={({ isActive }) =>
+                `text-lg font-medium ${isActive ? "text-[#8C4B23]" : "text-[#1A0D36]"}`
+              }
+              onClick={() => setMenuOpen(false)}
+            >
+              {page}
+            </NavLink>
+          ))}
         </div>
       </div>
     </nav>
