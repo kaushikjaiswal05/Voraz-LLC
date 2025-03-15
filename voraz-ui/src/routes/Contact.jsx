@@ -17,7 +17,7 @@ const Contact = () => {
     setStatus(null);
 
     try {
-      const response = await fetch("http://localhost:5000/contact", {
+      const response = await fetch("https://voraz-server.onrender.com/contact", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(formData),
@@ -41,7 +41,7 @@ const Contact = () => {
   return (
     <section className="w-full px-6 md:px-12 mt-8 lg:px-20 py-16 flex flex-col lg:flex-row items-center justify-between bg-white">
       
-      {/* Left Section - Contact Info */}
+      {/* Left Section */}
       <div className="w-full lg:w-1/2 space-y-6">
         <motion.h2
           initial={{ opacity: 0, y: -20 }}
