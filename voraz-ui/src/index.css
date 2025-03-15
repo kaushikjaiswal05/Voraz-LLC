@@ -1,0 +1,9 @@
+@import "tailwindcss";
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Navbar Hover Effects */
+nav ul li a {
+  transition: color 0.3s ease-in-out;
+}
