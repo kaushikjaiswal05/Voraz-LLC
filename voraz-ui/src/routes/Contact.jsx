@@ -62,7 +62,7 @@ const Contact = () => {
             <FaPhoneAlt className="text-[#8C4B23] text-2xl" />
             <div>
               <p className="font-semibold text-gray-900">Phone</p>
-              <p className="text-gray-600">+91 8983230676, +1-786-544-2007</p>
+              <p className="text-gray-600">+1-786-544-2007</p>
             </div>
           </div>
 
@@ -70,7 +70,7 @@ const Contact = () => {
             <FaEnvelope className="text-[#8C4B23] text-2xl" />
             <div>
               <p className="font-semibold text-gray-900">Email</p>
-              <p className="text-gray-600">info@thevoraz.com</p>
+              <p className="text-gray-600">chintan@thevoraz.com</p>
             </div>
           </div>
 
@@ -78,13 +78,13 @@ const Contact = () => {
             <FaMapMarkerAlt className="text-[#8C4B23] text-2xl" />
             <div>
               <p className="font-semibold text-gray-900">Address</p>
-              <p className="text-gray-600">A/912, Lokmat Bhavan, Nagpur, Maharashtra, 440010</p>
+              <p className="text-gray-600">5830 E 2nd St. Suite 8, Casper, WY 82609</p>
             </div>
           </div>
         </div>
       </div>
 
-      {/* Right Section - Contact Form */}
+      {/* Right Section */}
       <div className="w-full lg:w-1/2 bg-gray-100 p-8 rounded-lg shadow-lg mt-8 lg:mt-0">
         <motion.form
           initial={{ opacity: 0, x: 20 }}

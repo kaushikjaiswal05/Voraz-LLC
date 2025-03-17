@@ -27,12 +27,12 @@ const Navbar = () => {
 
         {/* Desktop Navigation */}
         <ul className="hidden md:flex space-x-8 text-lg">
-          {["Home", "Services", "About", "Contact"].map((page) => (
+          {["Home", "About", "Services", "Contact"].map((page) => (
             <li key={page}>
               <NavLink
                 to={page === "Home" ? "/" : `/${page.toLowerCase()}`}
                 className={({ isActive }) =>
-                  `transition ${isActive ? "text-[#8C4B23] font-semibold" : "hover:text-[#8C4B23]"}`
+                  `transition ${isActive ? "text-[#8C4B23]" : "hover:text-[#8C4B23]"}`
                 }
               >
                 {page}
