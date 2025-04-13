@@ -31,7 +31,7 @@ const About = () => {
           transition={{ duration: 1 }}
           className="space-y-6"
         >
-          <h3 className="text-3xl font-bold text-[#8C4B23]">Who We Are</h3>
+          <h3 className="text-3xl font-bold text-[#241E29]">Who We Are</h3>
           <p className="text-gray-700 leading-relaxed">
             The Voraz LLC is a U.S.-based technology and recruitment solutions provider with a mission to help businesses succeed by 
             offering cost-effective, high-quality IT outsourcing, RPO, and software development services. With over <span className="font-semibold">9 years</span> 
@@ -42,6 +42,7 @@ const About = () => {
         <motion.img
           src="/images/aboutus-img.jpg"
           alt="About Us"
+          loading="lazy"
           className="w-full lg:w-1/2 h-auto object-cover rounded-lg shadow-lg"
           initial={{ opacity: 0, scale: 0.9 }}
           animate={{ opacity: 1, scale: 1 }}
@@ -55,7 +56,7 @@ const About = () => {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1 }}
-          className="text-3xl font-bold text-center text-[#1A0D36] mb-10"
+          className="text-4xl font-bold text-center text-[#1A0D36] mb-10"
         >
           Why Choose The Voraz LLC?
         </motion.h3>
@@ -74,10 +75,10 @@ const About = () => {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 1, delay: index * 0.2 }}
-              className="bg-gray-100 p-6 rounded-lg shadow-lg text-center"
+              className="bg-gradient-to-b from-[#332A3C] to-[#493A57] p-6 rounded-lg shadow-lg text-center hover:transform hover:scale-105 transition-transform duration-300 ease-in-out"
             >
-              <h4 className="text-xl font-semibold text-[#8C4B23]">{feature.title}</h4>
-              <p className="text-gray-700 mt-3">{feature.text}</p>
+              <h4 className="text-2xl font-semibold text-white">{feature.title}</h4>
+              <p className="text-purple-200 mt-3">{feature.text}</p>
             </motion.div>
           ))}
         </div>
@@ -98,6 +99,7 @@ const About = () => {
           <motion.img
             src="/images/global.jpg"
             alt="Global Reach"
+            loading="lazy"
             className="w-full lg:w-1/2 h-auto object-cover"
             initial={{ opacity: 0, scale: 0.9 }}
             animate={{ opacity: 1, scale: 1 }}
@@ -123,14 +125,14 @@ const About = () => {
           initial={{ opacity: 0, y: 10 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1 }}
-          className="text-3xl font-semibold text-[#8C4B23]"
+          className="text-3xl font-semibold text-[#1A0D36]"
         >
           Let’s Build Something Great Together
         </motion.h3>
         <p className="text-gray-700 mt-3 text-lg mb-8">
           Get in touch with us to explore how we can collaborate.
         </p>
-        <NavLink to="/contact" className="mt-8 bg-[#8C4B23] text-white px-6 py-3 rounded-lg hover:bg-opacity-90 transition text-lg sm:mt-10">
+        <NavLink to="/contact" className="mt-8 bg-[#332A3D] text-white px-6 py-3 rounded-lg hover:bg-opacity-90 transition text-lg sm:mt-10">
           Contact Us
         </NavLink>
       </div>

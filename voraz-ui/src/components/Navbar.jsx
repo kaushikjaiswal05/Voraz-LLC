@@ -17,22 +17,22 @@ const Navbar = () => {
   }, [menuOpen]);
 
   return (
-    <nav className="fixed top-0 left-0 w-full bg-white z-50">
+    <nav className="fixed top-0 left-0 w-full bg-white z-50 px-8">
       <div className="container mx-auto flex justify-between items-center p-4 md:p-5">
         
         {/* Logo */}
         <NavLink to="/" className="flex items-center space-x-2">
-          <img src="/images/logo-voraz.jpg" alt="logo" className="w-30 h-12 md:w-30 md:h-12" />
+          <img src="/images/logo-voraz.png" alt="logo" className="w-30 h-12 md:w-30 md:h-12" />
         </NavLink>
 
         {/* Desktop Navigation */}
-        <ul className="hidden md:flex space-x-8 text-lg">
+        <ul className="hidden md:flex space-x-8 text-xl font-medium">
           {["Home", "About", "Services", "Contact"].map((page) => (
             <li key={page}>
               <NavLink
                 to={page === "Home" ? "/" : `/${page.toLowerCase()}`}
                 className={({ isActive }) =>
-                  `transition ${isActive ? "text-[#8C4B23]" : "hover:text-[#8C4B23]"}`
+                  `transition ${isActive ? "text-[#193d64]" : "hover:text-[#193d64]"}`
                 }
               >
                 {page}
@@ -43,7 +43,7 @@ const Navbar = () => {
 
         {/* Mobile Menu Button */}
         <button 
-          className="md:hidden text-[#8C4B23]" 
+          className="md:hidden bg-[#1A0D36] rounded-full p-2 text-white" 
           onClick={() => setMenuOpen(!menuOpen)}
         >
           {menuOpen ? <FiX size={32} /> : <FiMenu size={32} />}
@@ -62,7 +62,7 @@ const Navbar = () => {
             <img src="/images/logo-voraz.jpg" alt="logo" className="w-30 h-12 md:w-30 md:h-12" />
           </NavLink>
           <button 
-            className="text-[#8C4B23]" 
+            className="bg-[#1A0D36] rounded-full p-2 text-white" 
             onClick={() => setMenuOpen(false)}
           >
             <FiX size={32} />
@@ -76,7 +76,7 @@ const Navbar = () => {
               key={page}
               to={page === "Home" ? "/" : `/${page.toLowerCase()}`}
               className={({ isActive }) =>
-                `text-lg font-medium ${isActive ? "text-[#8C4B23]" : "text-[#1A0D36]"}`
+                `text-lg font-medium ${isActive ? "text-[#123458]" : "text-[#1A0D36]"}`
               }
               onClick={() => setMenuOpen(false)}
             >

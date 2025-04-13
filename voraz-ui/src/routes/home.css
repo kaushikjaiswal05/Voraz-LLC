@@ -2,30 +2,114 @@
     filter: brightness(0.8);
 }
 
+.gradient {
+    background: linear-gradient(to bottom, white 0%, white 20%, #E8D4EA, #dff6ee);
+}
+
+.middle-divider {
+    width: 100vw;
+    height: 80px;
+    background: linear-gradient(to bottom, #dff6ee, white);
+}
+
+
 @media screen and (max-width: 430px) {
+    .svg-img {
+        height: 400px;
+        width: 100%;
+    }
+
     .hero-img {
-        width: 85%;
+        width: 80%;
         height: 360px;
     }
 
+    .cta-btn {
+        width: 70%;
+        align-self: center;
+        margin-left: 20px;
+        margin-bottom: 10px;
+    }
+
     .floating-stat1 {
-        width: 120px;
-        height: 110px;
+        width: 165px;
+        height: 150px;
+        top: 10px;
+
+        .avatar-1 { 
+            width: 42px;
+            height: 42px;
+            top:10px;
+        }
+
+        .avatar-2 {
+            width: 35px;
+            height: 35px;
+        }
+
+        .avatar-3 {
+            width: 38px;
+            height: 38px;
+            top: 18px;
+        }
     }
 
     .floating-stat2 {
         width: 110px;
         height: 100px;
-        bottom: 40px;
+        bottom: 15px;
     }
 
     .floating-stat3 {
-        width: 120px;
-        height: 100px;
+        width: 135px;
+        height: 110px;
+        bottom: 40px;
     }
 
     .svg-img {
         height: 750px;
         width: 100%;
+    }
+
+    .about-left {
+        width: 100%;
+        padding: 0;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 780px) {
+    .cta-btn {
+        width: 70%;
+        align-self: center;
+        margin-left: 20px;
+        margin-bottom: 10px;
+    } 
+
+    .floating-stat1 {
+        width: 170px;
+        height: 160px;
+        top: 10px;
+
+        .avatar-1 { 
+            width: 42px;
+            height: 42px;
+            top:10px;
+        }
+
+        .avatar-2 {
+            width: 35px;
+            height: 35px;
+        }
+
+        .avatar-3 {
+            width: 38px;
+            height: 38px;
+            top: 18px;
+        }
+    }
+
+    .floating-stat2 {
+        bottom: 15px;
     }
 }

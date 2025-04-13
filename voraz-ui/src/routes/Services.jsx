@@ -79,19 +79,19 @@ const Services = () => {
         </motion.div>
       ))}
 
-      <div className="text-center mt-24">
+      <div className="text-center font-mediummt-24">
         <motion.h3
           initial={{ opacity: 0, y: 10 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1 }}
-          className="text-3xl font-semibold text-[#8C4B23]"
+          className="text-3xl font-semibold text-[#332A3D]"
         >
           Need Customized Solutions?
         </motion.h3>
         <p className="text-gray-700 mt-3 text-lg">
           Connect with us today and let’s discuss how we can help your business succeed.
         </p>
-        <button className="mt-8 bg-[#8C4B23] text-white px-6 py-3 rounded-lg hover:bg-opacity-90 transition text-lg">
+        <button className="mt-8 bg-[#332A3D] text-white px-6 py-3 rounded-lg hover:bg-opacity-90 transition text-lg">
           Schedule a Consultation
         </button>
       </div>
