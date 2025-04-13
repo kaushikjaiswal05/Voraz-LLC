@@ -245,7 +245,7 @@ const Home = () => {
               {/* Call-to-Action Button */}
               <NavLink
                 to="/contact"
-                className="mt-5 bg-gradient-to-b from-[#1B0030] via-[#270a3e] to-[#3b1f5b]  text-white px-5 py-2 rounded-lg font-semibold hover:bg-opacity-90 transition mb-4"
+                className="mt-5 bg-gradient-to-b from-[#1B0030] via-[#270a3e] to-[#3b1f5b]  text-white px-5 py-2 rounded-lg font-semibold hover:bg-opacity-90 transition mb-4 hover:scale-105"
               >
                 {service.buttonText}
               </NavLink>
@@ -279,7 +279,7 @@ const Home = () => {
           {/* CTA Button */}
           <NavLink
             to="/contact"
-            className="mt-4 md:mt-0 bg-white text-[#1B0030] px-6 py-4 rounded-full font-semibold text-sm md:text-base hover:bg-opacity-90 transition"
+            className="mt-4 md:mt-0 bg-white text-[#1B0030] px-6 py-4 rounded-full font-semibold text-sm md:text-base hover:bg-opacity-90 transition hover:scale-105"
           >
             Schedule a Consultation
           </NavLink>
