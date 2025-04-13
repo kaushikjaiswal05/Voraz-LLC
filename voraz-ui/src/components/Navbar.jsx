@@ -59,7 +59,7 @@ const Navbar = () => {
       >
         <div className="flex justify-between items-center">
           <NavLink to="/" className="flex items-center space-x-2">
-            <img src="/images/logo-voraz.jpg" alt="logo" className="w-30 h-12 md:w-30 md:h-12" />
+            <img src="/images/logo-voraz.png" alt="logo" className="w-30 h-12 md:w-30 md:h-12" />
           </NavLink>
           <button 
             className="bg-[#1A0D36] rounded-full p-2 text-white" 

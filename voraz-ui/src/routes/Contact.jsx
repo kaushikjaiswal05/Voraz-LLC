@@ -96,7 +96,7 @@ const Contact = () => {
           <img
             src="/images/contact-illustration.svg"
             alt="Contact Illustration"
-            className="hidden md:block w-80 h-100 m-auto"
+            className="md:block w-80 h-100 m-auto"
           />
         </div>
 
