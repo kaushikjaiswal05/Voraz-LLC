@@ -109,7 +109,7 @@ const Home = () => {
           >
             {/* Avatar Images */}
             <div className="absolute top-2.5 left-8 transform -translate-x-1/2 w-12 h-12 rounded-full border-2 border-white overflow-hidden shadow-md avatar-1">
-              <img src="/images/avatar1.jpg" alt="Avatar 1" loading="lazy" className="w-full h-full object-cover" />
+              <img src="/images/avatar1.jpg" alt="Avatar 1" loading="lazy" className="w-full h-full object-cover"  />
             </div>
             <div className="absolute bottom-4 left-5 w-8 h-8 rounded-full border-2 border-white overflow-hidden shadow-md avatar-2">
               <img src="/images/avatar2.jpg" alt="Avatar 2" loading="lazy" className="w-full h-full object-cover" />
