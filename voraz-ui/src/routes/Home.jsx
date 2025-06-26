@@ -126,7 +126,7 @@ const Home = () => {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 1, delay: 0.4 }}
-            className="absolute bottom-3 left-0 md:bottom-2 md:left-30 bg-white shadow-xl p-4 md:p-5 rounded-3xl flex flex-col justify-center items-center w-28 h-24 md:w-30 md:h-30 text-center sm:left-25 sm:bottom-10 z-11 floating-stat2"
+            className="absolute bottom-3 left-0 md:bottom-2 md:left-23 bg-white shadow-xl p-4 md:p-5 rounded-3xl flex flex-col justify-center items-center w-28 h-24 md:w-30 md:h-30 text-center sm:left-25 sm:bottom-10 z-11 floating-stat2"
           >
             <p className="text-2xl md:text-4xl font-bold text-[#380b58]">900+</p>
             <p className="text-xs md:text-xs text-gray-500">Placements</p>
